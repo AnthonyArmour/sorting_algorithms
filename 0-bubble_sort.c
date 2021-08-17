@@ -1,15 +1,16 @@
 #include "sort.h"
 /**
+ * swap - swaps 2 elements
  * @xp: pointer
  * @yp: pointer
  * Return: void
  */
-void swap(int *xp, int*yp)
+void swap(int *xp, int *yp)
 {
-    int temp = *xp;
-	
-    *xp = *yp;
-    *yp = temp;
+	int temp = *xp;
+
+	*xp = *yp;
+	*yp = temp;
 }
 
 /**
@@ -20,7 +21,7 @@ void swap(int *xp, int*yp)
  */
 void bubble_sort(int *array, size_t size)
 {
-    size_t i, j;
+	size_t i, j;
 
 	if (array)
 	{
